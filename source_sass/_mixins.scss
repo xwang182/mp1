@@ -1,0 +1,11 @@
+@mixin padding-top-bottom($space) {
+    padding-top: $space;
+    padding-bottom: $space;
+}
+
+@mixin same-width-height($value) {
+    width:$value;
+    height:$value;
+}
+
+

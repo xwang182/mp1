@@ -16,27 +16,31 @@ var myScript=function(event){
     var scrolledPosition=window.scrollY;
     var scrolled2=window.scrollY+window.innerHeight/2;
 
+    var originalColor="#FFFFFD";
+    var selectedColor="#FEE0C6";
     if(scrolled2<startHeight){
-        startLabel.style.backgroundColor = "#FEE0C6";
-        foodLabel.style.backgroundColor = "#FFFFFD";
-        playLabel.style.backgroundColor = "#FFFFFD";
-        lollipopLabel.style.backgroundColor = "#FFFFFD";
+        startLabel.style.backgroundColor = selectedColor;
+        foodLabel.style.backgroundColor =originalColor ;
+        playLabel.style.backgroundColor = originalColor;
+        lollipopLabel.style.backgroundColor = originalColor;
     }
     else if(scrolled2<startHeight+foodHeight){
-        startLabel.style.backgroundColor = "#FFFFFD";
-        foodLabel.style.backgroundColor = "#FEE0C6";
-        playLabel.style.backgroundColor = "#FFFFFD";
-        lollipopLabel.style.backgroundColor = "#FFFFFD";
+        startLabel.style.backgroundColor = originalColor;
+        foodLabel.style.backgroundColor =selectedColor ;
+        playLabel.style.backgroundColor = originalColor;
+        lollipopLabel.style.backgroundColor = originalColor;
     }
     else if(scrolled2<startHeight+foodHeight+playHeight){
-        foodLabel.style.backgroundColor = "#FFFFFD";
-        playLabel.style.backgroundColor = "#FEE0C6";
-        lollipopLabel.style.backgroundColor = "#FFFFFD";
+        startLabel.style.backgroundColor = originalColor;
+        foodLabel.style.backgroundColor =originalColor ;
+        playLabel.style.backgroundColor = selectedColor;
+        lollipopLabel.style.backgroundColor = originalColor;
     }
     else{
-        foodLabel.style.backgroundColor = "#FFFFFD";
-        playLabel.style.backgroundColor = "#FFFFFD";
-        lollipopLabel.style.backgroundColor = "#FEE0C6";
+        startLabel.style.backgroundColor = originalColor;
+        foodLabel.style.backgroundColor =originalColor ;
+        playLabel.style.backgroundColor = originalColor;
+        lollipopLabel.style.backgroundColor = selectedColor;
     }
 
 
@@ -153,5 +157,4 @@ $(document).ready(function() {
 
 
 });
-//a simple function to click next link
-//a timer will call this function, and the rotation will begin :)
+
